@@ -1,0 +1,79 @@
+\chapter{Drowsiness detection system}
+\label{chap:problem}
+\lhead{\emph{Problem Statement}}
+
+\section{Problem Definition}
+
+The objective of this project is to tackle a problem that is one of the core problems behind road accidents and has been tackled by many different individuals who have taken on this project with the aim of trying to solve the problem of drowsiness behind the wheel, but finding a single effective method to solve this problem has been very challenging as there has been a split on the method used to detect drowsiness for example should one use a  evasive method by monitoring the eyes lids of the drowsy individual using a camera or by using bracelet's and heart beat monitors as a more non evasive method for analysing drowsiness.The situation that arises at this point is to question which method will be the best in resolving and tackling this problem, what is the most effective in detecting if a driver is drowsy or not some studies have Incorporated both evasive and non evasive methods and some have decided to go with one or the other but for detecting of a driver is drowsy or not has to come down to the evasive method by using a camera to monitor the eyelids of the driver using the PERCLOS equation which takes a percentage of eyelid closure, the equation is calculated by counting the number of frames in which there was no pupil detected, and dividing this by the total number of frames for a specific time interval, PERCLOS  has a very high accuracy and is used  by continuously by others who have researched fatigue based projects its the leading evasive method.
+
+Detection of events in this system is will be  instantaneous as the user is constantly being monitored by a camera which will return readings about the drivers state to a computer that will process the drivers state. Currently the methods  that  exist only alarms the drivers but doesn't give any other functionality such as a management system or by keeping a track record of the drivers behavioral history.  The system being proposed by this project wont only just alarm the driver it will keep track of how many drowsy detection have happened lately for the driver  and will have a management system that also monitors the driver and can notify the driver to take a rest if required, each drowsy alert the system detects management will receive a notification also which will increase the safety of the driver and reduce the number of fatal crashes on the road. 
+
+
+
+
+\section{Objectives}
+•Have a fully functioning detection system that has a management and back end database system in place .
+
+•Accurately detect if a driver is feeling drowsy.
+
+•Be able to notify the driver with an alarm if drowsiness has been detected.
+
+•The application has to be evasive and not bother the driver.
+
+•The application has to be easy to configure and calibrate .
+\section{Functional Requirements}
+
+\subsection{Application requirements}
+
+•The camera used must run with a minimum of 5 megapixels.
+
+•The alarm should have a minimal sound of 65 db(A)to 5 dB(A) in order to wake the driver  .
+
+•Their must be a notification sent to the management after every alarm trigger.
+
+•A message must be sent to the driver if the alarm has been triggered more then once within a short space of time .
+
+•The alarm must be consistent until the driver becomes alert again .
+
+•A prompt appears if the driver doesn't respond to the alarm within a specific time frame usually anything over 5 seconds
+
+\subsection{Database requirements}
+
+•The database must keep track of the drivers details
+
+•If the driver has a history of drowsy driving the driver will be categorically placed in a high risk section on the database
+
+•The database will have the vehicle details 
+
+•A user view the history of the driver through the database
+
+• A user can add and remove  drivers from the database
+
+• Drowsiness information will be displayed for each user in a table and will be updated as received.
+
+•Heart rate information is displayed for each user in a graph and it updates as new information is received.
+
+
+\section{Non-Functional Requirements}
+
+•The application must accommodate all camera sizes.
+
+•The application must be able to sound any of alarm type.
+
+•The camera must work under any light conditions
+
+• The alarm will be heard under any conditions regardless
+
+•Notification alert to be triggered through:
+         –Multiple alarms going off within a short term basis .
+         –Alarm going off due to sleepy driver.
+         –Drowsiness detection by camera
+
+• The drivers details will be set up on the database when the driver sets up the drowsy detection system for the first time .
+
+
+
+
+
+
+
